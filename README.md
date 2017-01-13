@@ -1,3 +1,3 @@
-# RingCentral API Explorer
+# Glip API Explorer
 
-Please visit: [https://tylerlong.github.io/rc-api-explorer/](https://tylerlong.github.io/rc-api-explorer/).
+Please visit: [https://grokify.github.io/glip-api-explorer/](https://grokify.github.io/glip-api-explorer/).
