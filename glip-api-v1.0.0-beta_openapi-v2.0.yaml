@@ -3,7 +3,7 @@ info:
   title: RingCentral Glip REST API
   description: RingCentral Glip Messaging API
   version: "1.0.0"
-host: platform.ringcentral.com
+host: platform.devtest.ringcentral.com
 schemes:
   - https
 basePath: /restapi/v1.0
