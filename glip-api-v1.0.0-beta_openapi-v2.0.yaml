@@ -1,12 +1,12 @@
 swagger: "2.0"
 info:
   title: RingCentral Glip REST API
-  description: RingCentral Glip Messaging API
+  description: API Explorer for RingCentral Glip Messaging API
   version: "1.0.0"
 host: platform.devtest.ringcentral.com
 schemes:
   - https
-basePath: /restapi/v1.0
+basePath: /restapi/v1.0/glip
 produces:
   - application/json
 consumes:
@@ -23,7 +23,7 @@ security:
   - OauthSecurity:
     - default
 paths:
-  /glip/persons/{personId}:
+  /persons/{personId}:
     get:
       summary: "Get Person by ID"
       description: "Returns a person by id. If the person cannot be accessed by current user, API must return HTTP 404."
@@ -52,7 +52,7 @@ paths:
                 "creationTime":"2015-05-05T12:00:00Z",
                 "lastModifiedTime":"2016-03-05T12:00:00Z"
               }
-  /glip/companies/{companyId}:
+  /companies/{companyId}:
     get:
       summary: "Get Company Info"
       description: "Returns a company by id"
@@ -79,7 +79,7 @@ paths:
                 "creationTime": "2015-05-05T12:00:00Z",
                 "lastModifiedTime": "2016-03-05T12:00:00Z"
               }
-  /glip/groups:
+  /groups:
     get:
       summary: "Return groups associated with current user"
       description: "Return groups associated with current user"
@@ -145,7 +145,7 @@ paths:
                   "prevPageToken": "fgghjsdgfsjf"
                 }
               }
-  /glip/groups/{groupId}:
+  /groups/{groupId}:
     get:
       summary: "Returns a group by id"
       description: "Returns a group by id"
@@ -177,7 +177,7 @@ paths:
                   "23445652"
                 ]
               }
-  /glip/posts:
+  /posts:
     get:
       summary: "Get User Posts"
       description: "Return posts which are available for current user. Not more than 250 records to be returned in one request.
@@ -259,7 +259,7 @@ If posts cannot be viewed by current user (fro example, user is not member of gr
               }
         "404":
           description: If Group with groupId doesn't exists or user doesn't belong to the group, 404 should be returned.
-  /glip/posts/{postId}:
+  /posts/{postId}:
     get:
       summary: "Get Post By Id"
       description: "Returns post with given id. If a post cannot be viewed by current user, API must return HTTP 404."
