@@ -20,8 +20,8 @@
     "oauth": {
       "type": "oauth2",
       "flow": "accessCode",
-      "authorizationUrl": "https://platform.devtest.ringcentral.com/restapi/oauth/authorize",
-      "tokenUrl": "https://platform.devtest.ringcentral.com/restapi/oauth/token",
+      "authorizationUrl": "https://platform.ringcentral.com/restapi/oauth/authorize",
+      "tokenUrl": "https://platform.ringcentral.com/restapi/oauth/token",
       "scopes": {
         "default": "default permissions"
       }
