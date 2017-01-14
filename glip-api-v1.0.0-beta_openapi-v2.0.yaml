@@ -241,7 +241,7 @@ If posts cannot be viewed by current user (fro example, user is not member of gr
           description: "Create post JSON body"
           required: true
           schema:
-            $ref: "#/definitions/Post"
+            $ref: "#/definitions/CreatePostRequest"
       responses:
         "200":
           description: "Post or 404. If Group with groupId doesn't exists or user doesn't belong to the group, 404 should be returned."

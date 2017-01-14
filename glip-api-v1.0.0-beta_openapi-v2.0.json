@@ -441,29 +441,13 @@
             "required": true,
             "schema": {
               "properties": {
-                "id": {
-                  "type": "string",
-                  "description": "Id of post"
-                },
-                "creatorId": {
-                  "type": "string",
-                  "description": "Id of person created post"
-                },
                 "groupId": {
                   "type": "string",
-                  "description": "Id of group oist belongs to"
+                  "description": "Id of a group to send post to"
                 },
                 "text": {
-                  "type": "boolean",
-                  "description": "Text of message"
-                },
-                "creationTime": {
                   "type": "string",
-                  "description": "Time of creation (ISO format)"
-                },
-                "lastModifiedTime": {
-                  "type": "string",
-                  "description": "Time of last modification (ISO format)"
+                  "description": "Text of a post,up to 10000 unicode characters. All text must be returned"
                 }
               }
             }
