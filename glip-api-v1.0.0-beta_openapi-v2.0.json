@@ -346,26 +346,25 @@
         ],
         "parameters": [
           {
-            "name": "body",
-            "in": "body",
-            "description": "Create post JSON body",
+            "name": "groupId",
+            "in": "query",
+            "description": "Id of a group to filter posts",
             "required": true,
-            "schema": {
-              "properties": {
-                "groupId": {
-                  "type": "string",
-                  "description": "Id of a group to filter posts"
-                },
-                "paginationToken": {
-                  "type": "string",
-                  "description": "Pagination token"
-                },
-                "recordCount": {
-                  "type": "integer",
-                  "description": "Max number of records to return. Either of creationTimeFrom or creationTimeTo must be set, not both"
-                }
-              }
-            }
+            "type": "string"
+          },
+          {
+            "name": "pageToken",
+            "in": "query",
+            "description": "Pagination token",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "recordCount",
+            "in": "query",
+            "description": "Max number of records to return",
+            "required": false,
+            "type": "string"
           }
         ],
         "responses": {
@@ -867,22 +866,6 @@
               "description": "next page token. To get next page, user should pass one of returned token in next request and, in turn, required page will be returned with new tokens."
             }
           }
-        }
-      }
-    },
-    "ReadPostsRequest": {
-      "properties": {
-        "groupId": {
-          "type": "string",
-          "description": "Id of a group to filter posts"
-        },
-        "paginationToken": {
-          "type": "string",
-          "description": "Pagination token"
-        },
-        "recordCount": {
-          "type": "integer",
-          "description": "Max number of records to return. Either of creationTimeFrom or creationTimeTo must be set, not both"
         }
       }
     },

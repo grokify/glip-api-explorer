@@ -185,12 +185,21 @@ If posts cannot be viewed by current user (fro example, user is not member of gr
       tags:
         - post
       parameters:
-        - name: "body"
-          in: "body"
-          description: "Create post JSON body"
+        - name: "groupId"
+          in: "query"
+          description: "Id of a group to filter posts"
           required: true
-          schema:
-            $ref: "#/definitions/ReadPostsRequest"
+          type: "string"
+        - name: "pageToken"
+          in: "query"
+          description: "Pagination token"
+          required: false
+          type: "string"
+        - name: "recordCount"
+          in: "query"
+          description: "Max number of records to return"
+          required: false
+          type: "string"
       responses:
         "200":
           description: "a list of Group objects."
@@ -430,17 +439,6 @@ definitions:
         description: a list of post objects within a response envelope
       navigation:
         $ref: "#/definitions/Navigation"
-  ReadPostsRequest:
-    properties:
-      groupId:
-        type: string
-        description: Id of a group to filter posts
-      paginationToken:
-        type: string
-        description: Pagination token
-      recordCount:
-        type: integer
-        description: Max number of records to return. Either of creationTimeFrom or creationTimeTo must be set, not both
   Navigation:
     properties:
       prevPage:
