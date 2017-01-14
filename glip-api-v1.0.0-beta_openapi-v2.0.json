@@ -40,7 +40,7 @@
         "summary": "Get Person by ID",
         "description": "Returns a person by id. If the person cannot be accessed by current user, API must return HTTP 404.",
         "tags": [
-          "glip"
+          "person"
         ],
         "parameters": [
           {
@@ -106,7 +106,7 @@
         "summary": "Get Company Info",
         "description": "Returns a company by id",
         "tags": [
-          "glip"
+          "company"
         ],
         "parameters": [
           {
@@ -157,7 +157,7 @@
         "summary": "Return groups associated with current user",
         "description": "Return groups associated with current user",
         "tags": [
-          "glip"
+          "group"
         ],
         "parameters": [
           {
@@ -269,7 +269,7 @@
         "summary": "Returns a group by id",
         "description": "Returns a group by id",
         "tags": [
-          "glip"
+          "group"
         ],
         "parameters": [
           {
@@ -342,7 +342,7 @@
         "summary": "Get User Posts",
         "description": "Return posts which are available for current user. Not more than 250 records to be returned in one request. If posts cannot be viewed by current user (fro example, user is not member of group), API must return HTTP 404.",
         "tags": [
-          "glip"
+          "post"
         ],
         "parameters": [
           {
@@ -432,7 +432,7 @@
         "summary": "Send New Message",
         "description": "Creates post and send it to specified Group and returns it.",
         "tags": [
-          "glip"
+          "post"
         ],
         "parameters": [
           {
@@ -516,7 +516,7 @@
         "summary": "Get Post By Id",
         "description": "Returns post with given id. If a post cannot be viewed by current user, API must return HTTP 404.",
         "tags": [
-          "glip"
+          "post"
         ],
         "parameters": [
           {
