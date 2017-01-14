@@ -269,7 +269,7 @@
         "summary": "Returns a group by id",
         "description": "Returns a group by id",
         "tags": [
-          "groupm"
+          "group"
         ],
         "parameters": [
           {
