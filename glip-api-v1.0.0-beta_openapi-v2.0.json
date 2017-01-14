@@ -9,7 +9,7 @@
   "schemes": [
     "https"
   ],
-  "basePath": "/restapi/v1.0",
+  "basePath": "/",
   "produces": [
     "application/json"
   ],
